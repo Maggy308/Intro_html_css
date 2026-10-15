@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body{
+
+        }
+        form{
+            width: 50%;
+            margin: auto;
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .full-width{
+            width: 100%;
+            padding: 10px;
+            box-sizing:border-box
+            margin-bottom: 10px;
+
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+            color: blue;
+        }
+        button{
+            width: 100%;
+            background-color: rgb(255, 0, 0);
+            color: #ffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+    </style>
+    
+</head>
+<body>
+    <!--text,email,password,number,date,radio,checkbox,select,submit  -->
+    <form >
+       <label for="fname">First Name:</label><br>
+      <input .full-width type="text"id="fname" name="fname" required placeholder="Enter your first name"><br><br>
+      <label for="lname">Last Name:</label><br>
+        <input .full-width type="text" name="lname" placeholder="Enter your last name"><br><br>
+        <label for="email">Email:</label><br>
+        <input .full-width type="email" name="email" placeholder="Enter your email"><br><br>
+        <label for="password">Password:</label><br>
+        <input .full-width type="password" name="password" placeholder="Enter your password"><br><br>
+        <input .full-width type="number" min="40" max="80"step="0.01" required name="age" placeholder="Enter your age"><br><br>
+        <input .full-width type="date" name="dob" placeholder="Enter your date of birth"><br><br>
+        <label for="gender">Select your Gender:</label><br>
+        <input type="radio" name="gender" value="male" required>Male<br>
+        <input type="radio" name="gender" value="female">Female<br><br>
+        <input .full-width type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+        <label for="country">Select your Country:</label><br>
+        <select name="country">
+            <option value="kenya">Kenya</option>
+            <option value="uganda">Uganda</option>
+            <option value="tanzania">Tanzania</option>
+            <option value="malaysia">Malaysia</option>
+            <option value="maldives">Maldives</option>
+        </select> <br><br>
+        <input type="range" name="range" min="0" max="100"><br><br>
+
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
